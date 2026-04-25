@@ -1,0 +1,443 @@
+Enhance my existing Procurement and Inventory Management System into a professional enterprise-level role-based application without changing the existing login backend functionality.
+
+Current stack:
+
+* Spring Boot backend (already working)
+* Angular frontend (already working)
+
+Existing implemented modules:
+
+* Login
+* Dashboard
+* Product Catalog
+* Create Order
+* Order History
+* Delivery Tracking
+* Inventory Monitoring
+* Profile
+* Basic Chatbot Assistance
+
+IMPORTANT:
+My login backend is already fully implemented and working.
+
+The current login page already has:
+
+* Role selection (Admin / Manager / Supplier)
+* Email / Username
+* Password
+* CAPTCHA
+* Remember Me
+* Forgot Password
+* Login validation
+* Role-based authentication
+
+DO NOT change backend authentication APIs.
+DO NOT rebuild login logic.
+DO NOT modify login validation flow.
+
+Keep the same login details and backend integration exactly as it is.
+
+Only improve the UI/UX and overall application structure.
+
+==================================================
+LOGIN FLOW REQUIREMENT
+======================
+
+Current flow:
+Login → Dashboard
+
+Required new flow:
+Landing Page → Login Page → Role-Based Dashboard
+
+The login page should remain the same functionally, only UI improvements are allowed.
+
+Use the existing login page design and fields exactly as they are.
+
+The login page should open when the user clicks:
+
+* Login
+* Request Demo
+* Contact Sales (optional redirect)
+
+==================================================
+
+1. PROFESSIONAL LANDING PAGE (NEW)
+   ==================================================
+
+Create a premium SaaS-style landing page before login.
+
+This should look like a real enterprise product website.
+
+Use the existing branding and keep login page separate.
+
+Landing page sections:
+
+1. Hero Section
+
+Title:
+ProcureSphere
+
+Subtitle:
+Smart Procurement & Inventory Management Platform
+
+Description:
+Streamline procurement operations, supplier collaboration, approvals, inventory monitoring, and purchasing workflows with one unified platform.
+
+Buttons:
+
+* Login
+* Request Demo
+* Contact Sales
+
+Professional full-width design with strong enterprise UI.
+
+---
+
+2. Features Section
+
+Cards for:
+
+* Procurement Automation
+* Supplier Management
+* Approval Workflow
+* Inventory Monitoring
+* Invoice & Payment Tracking
+* AI Procurement Assistant
+
+---
+
+3. Role-Based Solutions Section
+
+Tabs for:
+
+* Admin
+* Manager
+* Supplier
+
+Each should explain role-specific benefits.
+
+---
+
+4. Why Choose Us Section
+
+Include:
+
+* Faster procurement cycle
+* Real-time visibility
+* Budget control
+* Reduced supplier delays
+* Approval transparency
+
+---
+
+5. Testimonials Section
+
+Professional testimonial cards
+
+---
+
+6. FAQ Section
+
+Enterprise-style FAQ section
+
+---
+
+7. Footer
+
+Include:
+
+* About Us
+* Contact
+* Support
+* Privacy Policy
+* Help Center
+
+==================================================
+2. LOGIN PAGE IMPROVEMENT
+=========================
+
+Keep the current login functionality exactly the same.
+
+Only improve:
+
+* UI styling
+* layout polish
+* branding consistency
+* responsiveness
+* better validation visuals
+* cleaner professional look
+
+Keep:
+
+* role toggle
+* email
+* password
+* captcha
+* remember me
+* forgot password
+* existing login API
+
+Add:
+
+* Back to Home button
+* “Register as Supplier” link
+
+Do not break anything.
+
+==================================================
+3. SUPPLIER REGISTRATION + ADMIN VERIFICATION
+=============================================
+
+Supplier should be able to:
+
+* Register supplier profile
+* Enter:
+
+  * Company Name
+  * GST Number
+  * Contact Details
+  * Company Profile PDF upload
+  * Bank Proof (optional)
+
+Admin should be able to:
+
+* View supplier requests
+* Approve supplier
+* Reject supplier
+* Suspend supplier
+* View supplier performance
+
+Workflow:
+If Admin rejects supplier:
+→ Supplier account inactive
+→ Manager cannot place orders to that supplier
+
+==================================================
+4. PURCHASE REQUEST FLOW
+========================
+
+Manager should be able to:
+
+* Raise purchase request
+* Add department
+* Add justification
+* Set urgency
+* Select products
+* Submit request
+
+Admin should be able to:
+
+* Approve / Reject / Hold
+* Add remarks
+
+Workflow:
+Rejected request
+→ Manager receives notification
+
+==================================================
+5. APPROVAL WORKFLOW
+====================
+
+Statuses:
+
+* Pending
+* Approved
+* Rejected
+* On Hold
+* Completed
+
+Include:
+
+* status tracking
+* approval history
+* remarks
+* priority handling
+
+==================================================
+6. PRODUCT COMPARISON PAGE
+==========================
+
+Manager:
+
+* Compare suppliers
+* Compare price
+* Compare delivery timeline
+* Compare supplier ratings
+
+==================================================
+7. REPORTS & ANALYTICS
+======================
+
+Admin + Manager:
+
+Reports:
+
+* Monthly Procurement Report
+* Supplier Performance
+* Pending Orders
+* Low Stock
+* Budget Utilization
+
+Include:
+
+* charts
+* summary cards
+* export PDF / Excel
+
+==================================================
+8. BUDGET CONTROL
+=================
+
+Admin:
+
+* Allocate budget
+* Track budget usage
+* Restrict over-budget requests
+
+If budget exceeded:
+→ Manager cannot submit request
+
+==================================================
+9. INVOICE + PAYMENT MANAGEMENT
+===============================
+
+Supplier:
+
+* Upload invoice
+
+Admin:
+
+* Verify invoice
+* Approve payment
+
+Include:
+
+* payment status
+* due alerts
+* payment history
+
+==================================================
+10. RETURNS / CANCELLATION
+==========================
+
+Manager:
+
+* Return request
+* Cancellation request
+* Reason selection
+
+Supplier:
+
+* Response handling
+
+==================================================
+11. NOTIFICATION CENTER
+=======================
+
+Add full notification module:
+
+* approvals
+* supplier response
+* payment alerts
+* low stock alerts
+* delivery updates
+
+Include:
+
+* read/unread
+* recent activity
+
+==================================================
+12. AUDIT LOGS
+==============
+
+Admin:
+
+* login history
+* who approved what
+* order changes
+* activity logs
+
+==================================================
+13. AI PROCUREMENT ASSISTANT
+============================
+
+Add a floating AI chatbot assistant.
+
+It should support:
+
+Admin:
+
+* Show pending approvals
+
+Manager:
+
+* Find lowest-cost supplier
+
+Supplier:
+
+* Show pending deliveries
+
+Inventory:
+
+* Which products are low stock?
+
+Orders:
+
+* Track PO number
+
+Reports:
+
+* Generate monthly report
+
+This must be useful, not a simple chatbot.
+
+==================================================
+14. ROLE-WISE DASHBOARDS
+========================
+
+Separate dashboards for:
+
+ADMIN:
+
+* approvals
+* suppliers
+* reports
+* budget
+* audit logs
+
+MANAGER:
+
+* requests
+* inventory
+* order tracking
+* product comparison
+
+SUPPLIER:
+
+* deliveries
+* invoices
+* payment tracking
+* order response
+
+==================================================
+FINAL REQUIREMENT
+=================
+
+Do not create dummy UI only.
+
+Make the system fully working with backend integration.
+
+Do not break existing working modules.
+
+Keep login backend unchanged.
+
+Use production-quality Angular structure.
+
+Professional reusable components.
+
+Responsive design.
+
+Modern enterprise dashboard styling.
+
+Every role action must affect other workflows.
